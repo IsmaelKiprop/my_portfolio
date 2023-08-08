@@ -40,6 +40,46 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* Center the video within the project tile */
+.project.video video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* Overlay for hover effect */
+.project.video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Text styling within the project tile */
+.project.video .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show overlay and text on hover */
+.project.video:hover .overlay {
+  opacity: 1;
+}
+
+.project.video:hover .text {
+  opacity: 1;
+}
+
+
 
 html {
   font-family: sans-serif;
