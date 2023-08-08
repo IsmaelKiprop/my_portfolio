@@ -40,6 +40,46 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+
+/* Add your global styles here */
+
+/* Close button styles */
+.navbar-close-btn {
+  font-size: 24px; /* Adjust the size as needed */
+  margin-left: 10px; /* Add spacing from the menu icon */
+  cursor: pointer;
+}
+
+/* Adjust images to fit */
+.slider-item .img {
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Adjust the width as needed */
+  height: 100vh; /* Adjust the height as needed */
+}
+
+/* Additional styling for the text content */
+.text {
+  color: white;
+}
+
+/* Additional styling for buttons */
+.btn {
+  /* Your button styles here */
+}
+
+.hide {
+  display: none;
+}
+
+
+
+.slider-item .one-third,
+.slider-item .one-forth {
+    background-size: cover;
+}
+  
+
 /* Center the video within the project tile */
 .project.video video {
   width: 100%;
