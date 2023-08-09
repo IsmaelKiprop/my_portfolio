@@ -196,6 +196,14 @@ navbar-brand:hover {
   height: 100vh; /* Adjust the height as needed */
 }
 
+/* Apply hover effect to anchor tags within the about-info list */
+.about-info li a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+  color: #007bff; /* Change the link color on hover */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+
 /* Additional styling for the text content */
 .text {
   color: white;
