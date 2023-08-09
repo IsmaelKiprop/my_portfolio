@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Send email using email.js
         emailjs.send('service_huf6wru', 'template_0utn5z9', {
             from_name: name,
-            reply_to: email,
+            email_id: email,
             subject: subject,
             message: message
         })
