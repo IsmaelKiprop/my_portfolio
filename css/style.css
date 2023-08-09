@@ -41,6 +41,14 @@
   box-sizing: border-box; }
 
 
+  /* Add the CSS for the hover and active effects */
+.service-link:hover,
+.service-link:focus {
+      color: yellow;
+      text-decoration: underline; /* Optional: Add underline effect */
+  }
+
+
 /* Add your global styles here */
 
 /* Close button styles */
