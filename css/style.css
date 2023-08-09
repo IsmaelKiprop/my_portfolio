@@ -50,7 +50,124 @@
 
 
 /* Add your global styles here */
+/* Add the heartbeat animation */
+@keyframes heartbeat {
+  from {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  to {
+      transform: scale(1);
+  }
+}
 
+/* Apply the heartbeat animation to the button */
+.btn-primary.heartbeat {
+  animation: heartbeat 1.5s infinite;
+}
+
+
+.heartbeat {
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+  }
+}
+
+/* Apply the shake animation to the buttons when hovered */
+.btn-shake:hover {
+  animation: shake 0.4s infinite;
+}
+
+.ftco-footer-social li a {
+  color: #333; /* Default color of the icons */
+  transition: color 0.3s ease; /* Add a smooth transition effect for color change */
+}
+
+.ftco-footer-social li a:hover {
+  color: #ffcc00; /* Change the color of the icons on hover */
+  transform: scale(1.2); /* Increase the size of the icon on hover */
+}
+
+.ftco-footer-widget a {
+  color: #333; /* Default color of the links */
+  transition: color 0.3s ease; /* Add a smooth transition effect for color change */
+}
+
+.ftco-footer-widget a:hover {
+  color: #ffcc00; /* Change the color of the links on hover */
+}
+
+.ftco-footer-widget a {
+  color: #333; /* Default color of the links */
+  transition: color 0.3s ease; /* Add a smooth transition effect for color change */
+}
+
+.ftco-footer-widget a:hover {
+  color: #ffcc00; /* Change the color of the links on hover */
+}
+
+.ftco-footer-widget a {
+  color: #333; /* Default color of the links */
+  transition: color 0.3s ease, transform 0.2s ease; /* Add smooth transitions for color and transform */
+}
+
+.ftco-footer-widget a:hover {
+  color: #ffcc00; /* Change the color of the links on hover */
+  transform: translateY(-2px); /* Apply a slight vertical translation on hover */
+}
+
+.footer-link {
+  color: #333; /* Default color of the link */
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffcc00; /* Color change on hover */
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.footer-link {
+  color: #333; /* Default color of the link */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-link:hover {
+  color: transparent; /* Hide the text color while keeping the glow */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Add the glowing effect */
+}
 /* Close button styles */
 .navbar-close-btn {
   font-size: 24px; /* Adjust the size as needed */
