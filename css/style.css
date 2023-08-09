@@ -168,6 +168,19 @@
   color: transparent; /* Hide the text color while keeping the glow */
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Add the glowing effect */
 }
+
+navbar-brand {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white; /* Text color */
+  transition: color 0.3s ease; /* Transition effect for color change */
+}
+
+navbar-brand:hover {
+  color: yellow; /* Change color on hover */
+}
 /* Close button styles */
 .navbar-close-btn {
   font-size: 24px; /* Adjust the size as needed */
