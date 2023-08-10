@@ -212,80 +212,120 @@
     	</div>
     </section>
 
-    <section class="ftco-section" id="services-section">
-    	<div class="container">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Services</h1>
-            <h2 class="mb-4">Services</h2>
-            <p>Am dedicated to solve real world problems using technology</p>
-          </div>
-        </div>
-    		<div class="row">
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Services</h1>
+					<h2 class="mb-4">Services</h2>
+					<p>Am dedicated to solving real-world problems using technology</p>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
+					<div class="services-1" onclick="toggleAudioAndIcon('web-design-aud-0', 'web-design-icon')">
 						<span class="icon">
 							<img src="./images/web design.jpeg" alt="">
+							<span id="web-design-icon" class="audio-icon">
+								<i class="play-icon fas fa-play"></i>
+								<i class="pause-icon fas fa-pause"></i>
+							</span>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5">Web Design</h3>
+							<h3 class="mb-4">Web Design</h3>
 						</div>
-					</a>
-				</div>				
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<img src="./images/soft dev.jpeg" alt="">
+					</div>
+					<audio id="web-design-aud-0" src="./audio/web-design-aud-0.mp3" onplay="updateIcon('web-design-icon', 'pause-icon')" onpause="updateIcon('web-design-icon', 'play-icon')"></audio>
+				</div>
+	
+				<!-- Repeat the same structure for the other service items -->
+				
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1" onclick="toggleAudioAndIcon('app -aud-0', 'app-icon')">
+						<span class="icon">
+							<img src="./images/app.jpeg" alt="">
+							<span id="app-icon" class="audio-icon">
+								<i class="play-icon fas fa-play"></i>
+								<i class="pause-icon fas fa-pause"></i>
 							</span>
-							<div class="desc">
-								<h3 class="mb-5">Software Development</h3>
-							</div>
-						</a>
-					</div>					
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<img src="./images/web.jpeg" alt="">
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Web Development</h3>
-							</div>
-						</a>
-					</div>					
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">App Development</h3>
+						</div>
+					</div>
+					<audio id="app -aud-0" src="./audio/app -aud-0.mp3" onplay="updateIcon('app-icon', 'pause-icon')" onpause="updateIcon('app-icon', 'play-icon')"></audio>
+				</div>
 
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<img src="./images/app.jpeg" alt="">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1"onclick="toggleAudioAndIcon('software-aud-0', 'web-design-icon')">
+						<span class="icon">
+							<img src="./images/soft dev.jpeg" alt="">
+							<span id="software-icon" class="audio-icon">
+								<i class="play-icon fas fa-play"></i>
+								<i class="pause-icon fas fa-pause"></i>
 							</span>
-							<div class="desc">
-								<h3 class="mb-5">App Development</h3>
-							</div>
-						</a>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Software Development</h3>
+						</div>
 					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<img src="./images/graphic-design.jpeg" alt="">
+					<audio id="software-aud-0" src="./audio/software-aud-0.mp3" onplay="updateIcon('software-icon', 'pause-icon')" onpause="updateIcon('software-icon', 'play-icon')"></audio>
+				</div>
+
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1"onclick="toggleAudioAndIcon('web-development-aud', 'web-icon')">
+						<span class="icon">
+							<img src="./images/web.jpeg" alt="">
+							<span id="web-development-icon" class="audio-icon">
+								<i class="play-icon fas fa-play"></i>
+								<i class="pause-icon fas fa-pause"></i>
 							</span>
-							<div class="desc">
-								<h3 class="mb-5">Graphic Design</h3>
-							</div>
-						</a>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Web Development</h3>
+						</div>
 					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<img src="./images/product.jpeg" alt="">
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Product Strategy</h3>
-							</div>
-						</a>
+					<audio id="web-development-aud" src="./audio/web-development-aud.mp3" onplay="updateIcon('web-icon', 'pause-icon')" onpause="updateIcon('web-icon', 'play-icon')"></audio>
+			</div>
+
+			<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="services-1"onclick=" toggleAudioAndIcon('graphic-aud-0', 'graphic-icon')">
+					<span class="icon">
+						<img src="./images/graphic-design.png" alt="">
+						<span id="web-design-icon" class="audio-icon">
+							<i class="play-icon fas fa-play"></i>
+							<i class="pause-icon fas fa-pause"></i>
+						</span>
+					</span>
+					<div class="desc">
+						<h3 class="mb-5">Graphic Design</h3>
 					</div>
 				</div>
-    	</div>
-    </section>
+				<audio id="graphic-aud-0" src="./audio/graphic-aud-0.mp3" onplay="updateIcon('graphic-icon', 'pause-icon')" onpause="updateIcon('graphic-icon', 'play-icon')"></audio>
+			</div>
+
+			<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="services-1" onclick="toggleAudioAndIcon('product-aud-0', 'product-icon')">
+					<span class="icon">
+						<img src="./images/product.jpeg" alt="">
+						<span id="web-design-icon" class="audio-icon">
+							<i class="play-icon fas fa-play"></i>
+							<i class="pause-icon fas fa-pause"></i>
+						</span>
+					</span>
+					<div class="desc">
+						<h3 class="mb-5">Product Strategy</h3>
+					</div>
+				</div>
+				<audio id="product-aud-0" src="./audio/product-aud-0.mp3" onplay="updateIcon('product-icon', 'pause-icon')" onpause="updateIcon('product-icon', 'play-icon')"></audio>
+			</div>
+	
+				<!-- Repeat the same structure for the remaining service items -->
+	
+			</div>
+		</div>
+	</section>
+	
 
 		
 		<section class="ftco-section" id="skills-section">

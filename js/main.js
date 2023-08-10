@@ -303,7 +303,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+const audioElements = {
+	'web-design-aud-0': document.getElementById('web-design-aud-0'),
+	'software-aud-0': document.getElementById('software-aud-0'),
+	'web-development-aud': document.getElementById('web-development-aud'),
+	'app -aud-0': document.getElementById('app -aud-0'),
+	'graphic-aud-0': document.getElementById('graphic-aud-0'),
+	'product-aud-0': document.getElementById('product-aud-0'),
 
+	// Add other audio elements here
+};
+
+const iconElements = {
+	'web-design-icon': document.getElementById('web-design-icon'),
+	'software-icon': document.getElementById('software-icon'),
+	'graphic-icon': document.getElementById('graphic-icon'),
+	'app-icon': document.getElementById('app-icon'),
+	'product-icon': document.getElementById('product-icon'),
+	'web-icon': document.getElementById('web-icon'),
+};
+
+// Function to toggle audio play/pause and icon
+function toggleAudioAndIcon(audioId, iconId) {
+	const audio = audioElements[audioId];
+	const icon = iconElements[iconId];
+
+	if (audio.paused) {
+		audio.play();
+		updateIcon(icon, 'pause-icon');
+	} else {
+		audio.pause();
+		updateIcon(icon, 'play-icon');
+	}
+}
+
+// Function to update icon based on play/pause state
+function updateIcon(icon, state) {
+	icon.querySelector('.play-icon').style.display = state === 'play-icon' ? 'inline-block' : 'none';
+	icon.querySelector('.pause-icon').style.display = state === 'pause-icon' ? 'inline-block' : 'none';
+}
 
 
 
