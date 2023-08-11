@@ -343,5 +343,66 @@ function updateIcon(icon, state) {
 	icon.querySelector('.pause-icon').style.display = state === 'pause-icon' ? 'inline-block' : 'none';
 }
 
+// Function to add animation on hover
+function addHoverAnimation(element) {
+  element.addEventListener('mouseenter', function() {
+    element.style.transform = 'translateY(-5px)';
+  });
+
+  element.addEventListener('mouseleave', function() {
+    element.style.transform = 'translateY(0)';
+  });
+}
+
+// Attach animations to the service items
+document.addEventListener('DOMContentLoaded', function() {
+  const serviceItems = document.querySelectorAll('.services-1');
+  
+  serviceItems.forEach(item => {
+    addHoverAnimation(item);
+  });
+});
+
+// script.js
+
+// Function to add animation on hover
+function addHoverAnimation(element) {
+  element.addEventListener('mouseenter', function() {
+    element.style.transform = 'translateY(-5px)';
+  });
+
+  element.addEventListener('mouseleave', function() {
+    element.style.transform = 'translateY(0)';
+  });
+}
+
+// Function to add animation on scroll
+function addScrollAnimation(element) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = 'translateY(-5px)';
+      } else {
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  });
+
+  observer.observe(element);
+}
+
+// Attach animations to the service items
+document.addEventListener('DOMContentLoaded', function() {
+  const serviceItems = document.querySelectorAll('.services-1');
+
+  serviceItems.forEach(item => {
+    addHoverAnimation(item);
+    addScrollAnimation(item);
+  });
+});
+
+
+
+
 
 

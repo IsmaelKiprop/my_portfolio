@@ -203,6 +203,25 @@ navbar-brand:hover {
   cursor: pointer; /* Change the cursor to a pointer on hover */
 }
 
+/* Add animation styles for the wave effect */
+.ftco-footer-social li a {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.ftco-footer-social li a:hover {
+  transform: translateY(-3px);
+}
+
+.ftco-animate .icon-twitter,
+.ftco-animate .icon-facebook,
+.ftco-animate .icon-linkedin {
+  font-size: 24px; /* Example icon size */
+  color: #e1f00e; 
+  /* Add your icon styles here */
+}
+
 
 /* Additional styling for the text content */
 .text {
