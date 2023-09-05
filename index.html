@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ismael.Tech</title>
+    <title>ismaeltech.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -223,109 +223,138 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<div class="services-1" onclick="toggleAudioAndIcon('web-design-aud-0', 'web-design-icon')">
-						<span class="icon">
-							<img src="./images/web design.jpeg" alt="">
-							<span id="web-design-icon" class="audio-icon">
-								<i class="play-icon fas fa-play"></i>
-								<i class="pause-icon fas fa-pause"></i>
-							</span>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">Web Design</h3>
-						</div>
-					</div>
-					<audio id="web-design-aud-0" src="./audio/web-design-aud-0.mp3" onplay="updateIcon('web-design-icon', 'pause-icon')" onpause="updateIcon('web-design-icon', 'play-icon')"></audio>
+  					<div class="services-1" onclick="toggleAudioAndIcon('web-design-aud-0', 'web-design-icon'); addTapAnimation(this);">
+    					<span class="icon">
+      						<img src="./images/web design.jpeg" alt="">
+      						<span id="web-design-icon" class="audio-icon">
+        						<i class="play-icon fas fa-play"></i>
+        						<i class="pause-icon fas fa-pause"></i>
+      						</span>
+    					</span>
+    					<div class="desc">
+      						<h3 class="mb-4">Web Design</h3>
+    					</div>
+  					</div>
+  					<audio id="web-design-aud-0" src="./audio/web-design-aud-0.mp3" onplay="updateIcon('web-design-icon', 'pause-icon'); addTapAnimation(this.parentNode);"
+    				onpause="updateIcon('web-design-icon', 'play-icon'); removeTapAnimation(this.parentNode);"></audio>
 				</div>
-	
-				<!-- Repeat the same structure for the other service items -->
-				
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<div class="services-1" onclick="toggleAudioAndIcon('app -aud-0', 'app-icon')">
-						<span class="icon">
-							<img src="./images/app.jpeg" alt="">
-							<span id="app-icon" class="audio-icon">
-								<i class="play-icon fas fa-play"></i>
-								<i class="pause-icon fas fa-pause"></i>
-							</span>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">App Development</h3>
-						</div>
-					</div>
-					<audio id="app -aud-0" src="./audio/app -aud-0.mp3" onplay="updateIcon('app-icon', 'pause-icon')" onpause="updateIcon('app-icon', 'play-icon')"></audio>
-				</div>
-
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<div class="services-1"onclick="toggleAudioAndIcon('software-aud-0', 'web-design-icon')">
-						<span class="icon">
-							<img src="./images/soft dev.jpeg" alt="">
-							<span id="software-icon" class="audio-icon">
-								<i class="play-icon fas fa-play"></i>
-								<i class="pause-icon fas fa-pause"></i>
-							</span>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Software Development</h3>
-						</div>
-					</div>
-					<audio id="software-aud-0" src="./audio/software-aud-0.mp3" onplay="updateIcon('software-icon', 'pause-icon')" onpause="updateIcon('software-icon', 'play-icon')"></audio>
+  					<div class="services-1" onclick="toggleAudioAndIcon('app-aud-0', 'app-icon'); addTapAnimation(this);">
+    					<span class="icon">
+      						<img src="./images/app.jpeg" alt="">
+      					<span id="app-icon" class="audio-icon">
+        					<i class="play-icon fas fa-play"></i>
+        					<i class="pause-icon fas fa-pause"></i>
+      					</span>
+    					</span>
+    					<div class="desc">
+      						<h3 class="mb-4">App Development</h3>
+    					</div>
+  					</div>
+  						<audio id="app-aud-0" src="./audio/app -aud-0.mp3" onplay="updateIcon('app-icon', 'pause-icon'); addTapAnimation(this.parentNode);"
+    					onpause="updateIcon('app-icon', 'play-icon'); removeTapAnimation(this.parentNode);"></audio>
 				</div>
 
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<div class="services-1"onclick="toggleAudioAndIcon('web-development-aud', 'web-icon')">
-						<span class="icon">
-							<img src="./images/web.jpeg" alt="">
-							<span id="web-development-icon" class="audio-icon">
-								<i class="play-icon fas fa-play"></i>
-								<i class="pause-icon fas fa-pause"></i>
-							</span>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Web Development</h3>
-						</div>
-					</div>
-					<audio id="web-development-aud" src="./audio/web-development-aud.mp3" onplay="updateIcon('web-icon', 'pause-icon')" onpause="updateIcon('web-icon', 'play-icon')"></audio>
-			</div>
+  					<div class="services-1" onclick="toggleAudioAndIcon('software-aud-0', 'software-icon'); addTapAnimation(this);">
+    					<span class="icon">
+      						<img src="./images/soft dev.jpeg" alt="">
+      					<span id="software-icon" class="audio-icon">
+        					<i class="play-icon fas fa-play"></i>
+        					<i class="pause-icon fas fa-pause"></i>
+      					</span>
+    					</span>
+    					<div class="desc">
+      						<h3 class="mb-5">Software Development</h3>
+    					</div>
+  					</div>
+  						<audio id="software-aud-0" src="./audio/software-aud-0.mp3" onplay="updateIcon('software-icon', 'pause-icon'); addTapAnimation(this.parentNode);"
+    					onpause="updateIcon('software-icon', 'play-icon'); removeTapAnimation(this.parentNode);"></audio>
+				</div>
 
-			<div class="col-md-4 text-center d-flex ftco-animate">
-				<div class="services-1"onclick=" toggleAudioAndIcon('graphic-aud-0', 'graphic-icon')">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="services-1" onclick="toggleAudioAndIcon('web-development-aud', 'web-development-icon'); addTapAnimation(this);">
 					<span class="icon">
-						<img src="./images/graphic-design.png" alt="">
-						<span id="web-design-icon" class="audio-icon">
-							<i class="play-icon fas fa-play"></i>
-							<i class="pause-icon fas fa-pause"></i>
-						</span>
+					<img src="./images/web.jpeg" alt="">
+					<span id="web-development-icon" class="audio-icon">
+						<i class="play-icon fas fa-play"></i>
+						<i class="pause-icon fas fa-pause"></i>
+					</span>
 					</span>
 					<div class="desc">
-						<h3 class="mb-5">Graphic Design</h3>
+					<h3 class="mb-5">Web Development</h3>
 					</div>
 				</div>
-				<audio id="graphic-aud-0" src="./audio/graphic-aud-0.mp3" onplay="updateIcon('graphic-icon', 'pause-icon')" onpause="updateIcon('graphic-icon', 'play-icon')"></audio>
-			</div>
+				<audio id="web-development-aud" src="./audio/web-development-aud.mp3" onplay="updateIcon('web-development-icon', 'pause-icon'); addTapAnimation(this.parentNode);"
+					onpause="updateIcon('web-development-icon', 'play-icon'); removeTapAnimation(this.parentNode);"></audio>
+				</div>
 
-			<div class="col-md-4 text-center d-flex ftco-animate">
-				<div class="services-1" onclick="toggleAudioAndIcon('product-aud-0', 'product-icon')">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="services-1" onclick="toggleAudioAndIcon('graphic-aud-0', 'graphic-icon'); addTapAnimation(this);">
 					<span class="icon">
-						<img src="./images/product.jpeg" alt="">
-						<span id="web-design-icon" class="audio-icon">
-							<i class="play-icon fas fa-play"></i>
-							<i class="pause-icon fas fa-pause"></i>
-						</span>
+					<img src="./images/graphic-design.png" alt="">
+					<span id="graphic-icon" class="audio-icon">
+						<i class="play-icon fas fa-play"></i>
+						<i class="pause-icon fas fa-pause"></i>
+					</span>
 					</span>
 					<div class="desc">
-						<h3 class="mb-5">Product Strategy</h3>
+					<h3 class="mb-5">Graphic Design</h3>
 					</div>
 				</div>
-				<audio id="product-aud-0" src="./audio/product-aud-0.mp3" onplay="updateIcon('product-icon', 'pause-icon')" onpause="updateIcon('product-icon', 'play-icon')"></audio>
-			</div>
-	
-				<!-- Repeat the same structure for the remaining service items -->
-	
+				<audio id="graphic-aud-0" src="./audio/graphic-aud-0.mp3" onplay="updateIcon('graphic-icon', 'pause-icon'); addTapAnimation(this.parentNode);"
+					onpause="updateIcon('graphic-icon', 'play-icon'); removeTapAnimation(this.parentNode);"></audio>
+				</div>
+
+				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="services-1" onclick="toggleAudioAndIcon('product-aud-0', 'product-icon'); addTapAnimation(this);">
+					<span class="icon">
+					<img src="./images/product.jpeg" alt="">
+					<span id="product-icon" class="audio-icon">
+						<i class="play-icon fas fa-play"></i>
+						<i class="pause-icon fas fa-pause"></i>
+					</span>
+					</span>
+					<div class="desc">
+					<h3 class="mb-5">Product Strategy</h3>
+					</div>
+				</div>
+				<audio id="product-aud-0" src="./audio/product-aud-0.mp3" onplay="updateIcon('product-icon', 'pause-icon'); addTapAnimation(this.parentNode);"
+					onpause="updateIcon('product-icon', 'play-icon'); removeTapAnimation(this.parentNode);"></audio>
+				</div>
+			
+					
 			</div>
 		</div>
 	</section>
-	
+
+		<style>
+  		.tap-animation {
+   		 animation: tap 1.5s infinite;
+  								}
+
+  		@keyframes tap {
+    	0%, 100% {
+      	transform: translateY(0);
+    	}
+    	50% {
+      	transform: translateY(-10px);
+    	}
+  		}
+		</style>
+		<script>
+  		function addTapAnimation(element) {
+    	element.classList.add('tap-animation');
+  		}
+
+  		function removeTapAnimation(element) {
+    	element.classList.remove('tap-animation');
+  		}
+
+  		// Your existing JavaScript functions (toggleAudioAndIcon, updateIcon) here
+		</script>
+
+					
 
 		
 		<section class="ftco-section" id="skills-section">
@@ -406,7 +435,29 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
+							<h3>PHP</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							    <span>80%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
 							<h3>GIT</h3>
+							<div class="progress">
+						 		<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
+						  		aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								<span>90%</span>
+						  		</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>VSCode</h3>
 							<div class="progress">
 						 		<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
 						  		aria-valuemin="0" aria-valuemax="100" style="width:80%">
@@ -443,8 +494,8 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="project video ftco-animate d-flex justify-content-center align-items-center">
-							<video controls poster="./images/vendorsgreen.jpeg">
-								<source src="./images/vendors.mp4" type="video/mp4">
+							<video controls poster="./images/Gallery.png">
+								<source src="./images/Gallery_Project.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 							</video>
 							<div class="overlay"></div>
@@ -506,6 +557,7 @@
 				</div>
 			</div>
 		</section>
+		
 		
 
     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
